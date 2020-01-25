@@ -8,13 +8,11 @@
     <body>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="section2">About Me</a>
-            <a href="section3">Career</a>
-            <a href="section3">Gallery</a>
+            <a href="images.html">Gallery</a>
         </nav>
 
        <h1>Image Gallery</h1>
-        <div class="strich">
+        <div id="strichone">
                 <h2>Produktfotografie</h2>
                 <div class="slideshow-container">
 
@@ -36,20 +34,32 @@
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
                 </div>
-            <div>
-        </div>
+            </div>
+  
             
-        <div class="strich">
+        <div id="strichtwo">
             <h2>Slide Show</h2>
-            <iframe width="1000" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-            <div>
+            <video>
+                <source src="../images/Slide-Show.mp4">
+            </video>
         </div>
        
+        
+        <div id = "strichthree">
+            <div id="in">
+                <a href="images.html"><img id="eins" src="../images/foodOne.jpg" width="30%"></a>
+                <a href="images.html"><img id="zwei" src="../images/foodTwo.png" width="30%"></a>
+                <a href="images.html"><img id="drei" src="../images/foodThree.png" width="30%"></a>
+
+                <a href="images.html"><img id="vier" src="../images/10.png" width="30%"></a>
+                <a href="images.html"><img id="sechs" src="../images/foodFour.png" width="30%"></a>
+            </div>
+        </div>
 
         <script>
                 var slideIndex = 1;
@@ -78,6 +88,6 @@
                   slides[slideIndex-1].style.display = "block";  
                   dots[slideIndex-1].className += " active";
                 }
-            </script>
+        </script>
     </body>
 </html>

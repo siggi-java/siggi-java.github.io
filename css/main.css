@@ -26,6 +26,8 @@ nav{
     margin-top: -1%;
     padding: 2%;
     margin-left: -1%;
+    font-size: 120%;
+    font-weight: bolder;
 }
 nav a{
     text-decoration: none;
@@ -41,9 +43,60 @@ nav a{
 }
 nav a:hover{
     color:red;
+    transition: color 1s;
+}
+nav a:active{
+    text-shadow: 0 0 5px white,
+                 0 0 10px white,
+                 0 0 20px yellow,
+                 0 0 40px yellow,
+                 0 0 60px red,
+                 0 0 90px white,
+                 0 0 120px yellow,
+                 0 0 160px white;
+}
+.text{
+    font-family: sans-serif;
+    margin-left: 25%;
+    font-size: 120%;
+    margin-top: -20%;
+}
+#in{
+    margin-left: 5%;
+}
+.text p a{
+    color: black;
+    text-decoration: none;
+}
+span{
+    font-weight: bolder;
+    color: red;
+    padding-left: 20%;
+}
+#getIn{
+    margin-left: 5%;
 }
 
-.strich{
+#strich{
+    width: 80%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 7%;
+    padding-top: 2%;
+    margin-bottom: 15%;
+}
+
+#strich:hover{
+    width: 80%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    transition: background 2s, color 2s;
+}
+
+
+#strichone{
     width: 80%;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
@@ -54,7 +107,7 @@ nav a:hover{
     margin-bottom: 5%;
 }
 
-.strich:hover{
+#strichone:hover{
     width: 80%;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
@@ -63,6 +116,125 @@ nav a:hover{
     padding-bottom: 2%;
     padding-top: 2%;
     margin-bottom: 5%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    transition: background 2s, color 2s;
+}
+
+
+#strichtwo{
+    width: 80%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+}
+
+#strichtwo:hover{
+    width: 80%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    transition: background 2s, color 2s;
+}
+
+
+#eins{
+    margin-top:3%;
+    transform: rotate(-12deg);
+    float:left;
+    border: 10px solid white;
+    z-index: 5;
+    border-bottom: 15px solid white;
+    box-shadow: 0 2vw 3vw black;
+}
+#eins:hover{
+    transform: rotate(0deg);
+    z-index: 100;opacity: 0.8;
+}
+#zwei{
+    transform: rotate(-2deg);
+    float:left;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    border: 10px solid white;
+    z-index: 4;
+    border-bottom: 15px solid white;
+    box-shadow: 0 2vw 3vw black;
+}
+#zwei:hover{
+    transform: rotate(0deg);
+    z-index: 100;
+    opacity: 0.8;
+}
+#drei{
+    transform: rotate(5deg);
+    float:left;
+    border: 10px solid white;
+    z-index: 3;
+    border-bottom: 1% solid white;
+    box-shadow: 0 2vw 3vw black;
+}
+#drei:hover{
+    transform: rotate(0deg);
+    z-index: 100;
+    opacity: 0.8;
+}
+#vier{
+    transform: rotate(7deg);
+    float:right;
+    margin-right: 53%;
+    margin-top: -2%;
+    border: 10px solid white;
+    z-index: 2;
+    border-bottom: 15px solid ehite;
+    box-shadow: 0 2vw 3vw black;
+    
+}
+#vier:hover{
+    transform: rotate(0deg);
+    z-index: 100;
+    opacity: 0.8;
+}
+
+#sechs{
+    transform: rotate(-6deg);
+    border: 10px solid white;
+    z-index: 2;
+    float: left;
+    margin-left: 50%;
+    border-bottom: 15px solid ehite;
+    box-shadow: 0 2vw 3vw black;
+    margin-top: -23%;
+}
+#sechs:hover{
+    transform: rotate(0deg);
+    z-index: 100;
+    opacity: 0.8;
+}
+
+#strichthree{
+    width: 80%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 44%;
+    padding-top: 4%;
+    margin-bottom: 5%;
+}
+
+#strichthree:hover{
+    width: 80%;
     background: rgba(0,0,0,0.7);
     color: white;
     transition: background 2s, color 2s;
@@ -128,13 +300,13 @@ nav a:hover{
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
-  border-radius: 50%;
+  border-radius: 100%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: red;
 }
 
 /* Fading animation */
